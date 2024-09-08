@@ -39,7 +39,7 @@ public class MachineServiceImpl<T extends Machine> implements MachineService<T> 
     }
 
     @Override
-    public void startWorking(List<? extends Machine> machines) {
+    public void startWorking(List<? extends T> machines) {
         if (machines == null || machines.isEmpty()) {
             return;
         }
